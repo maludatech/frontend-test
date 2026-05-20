@@ -1,7 +1,17 @@
+import { ClassCards } from "@/components/ClassCards";
+import { CTASection } from "@/components/CTASection";
+import { Header } from "@/components/Header";
+import { ProgressBar } from "@/components/ProgressBar";
+import { ReferralSection } from "@/components/referralSection";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-5xl">Victor here!!</h1>
-    </div>
+    <main className="min-h-screen bg-[#F8F7F7] flex flex-col gap-12 py-4 px-20">
+      <Header />
+      <ClassCards />
+      <ProgressBar />
+      <ReferralSection />
+      <CTASection />
+    </main>
   );
 }
