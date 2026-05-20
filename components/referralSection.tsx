@@ -1,3 +1,5 @@
+import { Separator } from "./ui/separator";
+
 export const ReferralSection = () => {
   const referralBonus = [
     {
@@ -19,7 +21,7 @@ export const ReferralSection = () => {
 
   return (
     <div className="bg-[#EBEBEB] flex flex-col gap-2 p-4 rounded-[6px]">
-      <div className="flex flex-col sm:flex-row justify-between gap-5">
+      <div className="flex flex-col md:flex-row justify-between gap-5">
         <div className="flex flex-col">
           <h2 className="font-medium text-[#7015A5] text-sm uppercase mb-1.5">
             Invite friends
@@ -78,11 +80,38 @@ export const ReferralSection = () => {
                 />
               ))}
             </div>
-            <p>2 more bookings in 30 days = 20% off your next class</p>
+            <p className="text-[#37005C] text-[10px]">
+              2 more bookings in 30 days = 20% off your next class
+            </p>
+            <Separator className="bg-[#C78EFF] my-2" />
+            <div className="flex gap-1 items-center">
+              <div className="px-2 py-1 bg-[#37005C] rounded-lg text-center text-[#D7B3FF] text-[10px]">
+                Goal Reward
+              </div>
+              <p className="text-[10px] text-[#37005C]">
+                20% off your next class when all 3 book
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="flex flex-col mt-4 md:mt-0">
+        <button
+          className="w-fit px-4.25 py-3 
+             bg-[#D7B3FF] hover:bg-[#C38EFF] 
+             text-[#00282C] text-xl font-slab 
+             rounded-xl 
+             transition-all duration-200 
+             hover:scale-105 active:scale-95 
+             shadow-sm hover:shadow-md"
+        >
+          Get My Invite Link (10% Off)
+        </button>
+        <p className="text-xs pt-2 text-[#1D0034]">
+          Every friend who books also moves the class counter above helping
+          secure the session for everyone who&apos;s already in.
+        </p>
+      </div>
     </div>
   );
 };
