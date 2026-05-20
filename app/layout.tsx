@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: "Frontend Replication Test",
@@ -52,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${prRightSlab.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", manrope.variable, prRightSlab.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
