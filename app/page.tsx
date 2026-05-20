@@ -1,8 +1,8 @@
-import { ClassCards } from "@/components/ClassCards";
-import { CTASection } from "@/components/CTASection";
 import { Header } from "@/components/Header";
+import { ClassCards } from "@/components/ClassCards";
 import { ProgressBar } from "@/components/ProgressBar";
-import { ReferralSection } from "@/components/referralSection";
+import { ReferralSection } from "@/components/ReferralSection";
+import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
   return (
