@@ -65,7 +65,7 @@ export const ReferralSection = () => {
             <div className="flex justify-between gap-1">
               <p className="text-[#8E00DF] text-xs">Friends booked</p>
               <h4 className="text-[#8E00DF] text-xs">
-                6<span className="text-[#B765FF]">/10</span>
+                1<span className="text-[#B765FF]">/3</span>
               </h4>
             </div>
             <div className="flex flex-row gap-1">

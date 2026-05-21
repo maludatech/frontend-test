@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className="flex flex-col gap-16 pt-15">
       <div className="flex flex-col md:flex-row gap-6 justify-between">
-        <h1 className="font-light text-6xl  leading-none tracking-normal  text-[#4F2A7A] font-slab">
+        <h1 className="font-light text-5xl sm:text-6xl leading-none tracking-normal  text-[#4F2A7A] font-slab">
           Classes that
           <br /> <span className="text-[#AD67FF]">spark something.</span>
         </h1>
