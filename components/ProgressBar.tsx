@@ -12,10 +12,10 @@ export const ProgressBar = () => {
   return (
     <div className="bg-[#EBEBEB] flex flex-col gap-2 p-4 rounded-[6px]">
       <div className="flex flex-row justify-between font-slab">
-        <p className="text-[#003D43] text-[20px]">
+        <p className="text-[#003D43] text-lg sm:text-[20px]">
           Class holds at 10 students minimum
         </p>
-        <h4 className="text-[#7000B2] text-[28px]">
+        <h4 className="text-[#7000B2] text-lg sm:text-[28px]">
           6<span className="text-[#C78EFF]">/10</span>
         </h4>
       </div>
@@ -28,14 +28,14 @@ export const ProgressBar = () => {
           {studentsInitial.map((student) => (
             <div
               key={student.initial}
-              className="w-6 h-6 flex items-center justify-center rounded-full text-black font-semibold text-xs ring ring-white shadow-sm"
+              className="w-4 h-4 flex items-center justify-center rounded-full text-black font-semibold text-xs ring ring-white shadow-sm"
               style={{ backgroundColor: student.color }}
             >
               {student.initial}
             </div>
           ))}
         </div>
-        <p className="text-xs">
+        <p className="text-[10px]">
           <span className="font-semibold">6 students</span> already booked · 4
           spots left
         </p>
