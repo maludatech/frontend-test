@@ -4,7 +4,7 @@ import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Frontend Replication Test",
@@ -56,9 +56,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", manrope.variable, prRightSlab.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        manrope.variable,
+        prRightSlab.variable,
+        "font-sans",
+        geist.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full bg-white p-4 flex flex-col font-sans">
+        {children}
+      </body>
     </html>
   );
 }
