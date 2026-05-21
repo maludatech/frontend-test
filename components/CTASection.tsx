@@ -1,6 +1,6 @@
 export const CTASection = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-between">
+    <div className="flex flex-col sm:flex-row gap-8 pb-15 justify-between">
       <div className="flex flex-col gap-1 text-[#311058]">
         <h1 className="text-3xl md:text-[40px] font-slab">
           Spots fill fast. Next term starts soon.
