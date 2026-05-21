@@ -1,6 +1,6 @@
 import { Separator } from "./ui/separator";
 
-export const ReferralSection = () => {
+export const InviteFriendsSection = () => {
   const referralBonus = [
     {
       id: 1,

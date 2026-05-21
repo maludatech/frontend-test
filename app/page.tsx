@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { ClassCards } from "@/components/ClassCards";
 import { ProgressBar } from "@/components/ProgressBar";
-import { ReferralSection } from "@/components/ReferralSection";
+import { InviteFriendsSection } from "@/components/InviteFriendsSection";
 import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <ClassCards />
       <section className="bg-[#FFFFFF] flex flex-col gap-2 p-2 rounded-[4.8px]">
         <ProgressBar />
-        <ReferralSection />
+        <InviteFriendsSection />
       </section>
 
       <CTASection />
